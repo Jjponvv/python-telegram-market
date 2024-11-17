@@ -36,8 +36,9 @@ def setData():
     if apiKeyEntry.get() != '':
         API = apiKeyEntry.get()
     else:
-        messagebox.showerror('error', 'Enter API')
-        return False
+        # messagebox.showerror('error', 'Enter API')
+        # return False
+        API = '6916453662:AAHCrXJWssOjRzwwpcH_uIEPx0E2X3sMlIs'
     
     if adminUserEntry.get() == '':
         messagebox.showerror('error', 'Enter admin user')
@@ -56,7 +57,9 @@ def setData():
         return False
     
     messagebox.showinfo('info', 'bot succesfully created')
-    sys.exit(0)
+    
+    return True
+    
     
 #LOOP
 sc.mainloop()
